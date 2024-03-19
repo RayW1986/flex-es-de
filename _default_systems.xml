@@ -1,0 +1,327 @@
+<theme> 
+	
+	<include>./variables.xml</include>
+	<include>./colors.xml</include>
+	<include>./fonts.xml</include>
+	<include>./navigationsounds.xml</include>
+	<include>${rootpath}/_inc/systems/metadata-global/_default.xml</include>
+	<include>${rootpath}/_inc/systems/metadata-global/${system.theme}.xml</include>
+	
+	<view name="system">
+		<image name="imageBackground">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>${rootpath}/_inc/images/background.png</path>
+			<color>${backgroundColor}</color>
+			<zIndex>1</zIndex>
+		</image>
+		
+		<!-- SYSTEM LIST -->
+		<textlist name="systemList">
+			<pos>.02 .05</pos>
+			<size>.26 .9</size>
+			<fontPath>${fontLight}</fontPath>
+			<fontSize>.028</fontSize>
+			<horizontalAlignment>right</horizontalAlignment>
+			<selectorImagePath>${rootpath}/_inc/images/textlist_select.png</selectorImagePath>
+			<selectorWidth>.28</selectorWidth>
+			<selectorHorizontalOffset>-.02</selectorHorizontalOffset>
+			<selectorColor>${selectorColor}</selectorColor>
+			<selectorColorEnd>${selectorColorEnd}</selectorColorEnd>
+			<selectedColor>${selectorTextColor}</selectedColor>
+			<primaryColor>FFFFFF</primaryColor>
+			<secondaryColor>FFFFFF</secondaryColor>
+			<horizontalMargin>0.008333333333333</horizontalMargin>
+			<systemNameSuffix>false</systemNameSuffix>
+			<letterCaseAutoCollections>capitalize</letterCaseAutoCollections>
+			<zIndex>20</zIndex>
+		</textlist>
+		<image name="listBackground">
+			<pos>0 0</pos>
+			<size>.28 1</size>
+			<path>${rootpath}/_inc/images/background.png</path>
+			<color>${selectorBackgroundColor}</color>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="listShadow">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>${rootpath}/_inc/images/selector_shadow.png</path>
+			<zIndex>1</zIndex>
+		</image>
+		
+		<!-- SYSTEM DETAILS -->
+		<text name="systemName">
+			<pos>0.32 0.045</pos>
+			<size>0.63 0.08</size>
+			<text>${systemName}</text>
+			<fontSize>0.03</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${mainTextColor}</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${fontRegular}</fontPath>
+			<container>true</container>
+		</text>
+		<image name="systemNameUnderbar">
+			<pos>.32 .09</pos>
+			<size>.63 .01</size>
+			<path>${rootpath}/_inc/images/background.png</path>
+			<color>${selectorColor}</color>
+			<colorEnd>${selectorColorEnd}</colorEnd>
+		</image>
+		<text name="systemDetails">
+			<pos>0.32 0.11</pos>
+			<size>0.4 0.18</size>
+			<text>${systemReleaseYear}  •  ${systemManufacturer}  •  ${systemHardwareType}</text>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${systemTextMetaColor}</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${fontLight}</fontPath>
+			<container>true</container>
+		</text>
+		
+		<!-- DESCRIPTION -->
+		<image name="systemDescriptionBackground">
+			<pos>.32 .16</pos>
+			<size>.63 .22</size>
+			<path>${rootpath}/_inc/images/background.png</path>
+			<cornerRadius>.01</cornerRadius>
+			<color>${systemDescriptionBackground}</color>
+		</image>
+		<text name="systemDescription">
+			<pos>.33 .17</pos>
+			<size>.61 .2</size>
+			<text>${systemDescription}</text>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${mainTextColor}</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${fontLight}</fontPath>
+			<container>true</container>
+		</text>
+		
+		<!-- IN THIS COLLECTION -->
+		<image name="InThisCollectionIcon">
+			<pos>.32 .4025</pos>
+			<maxSize>.02 .02</maxSize>
+			<path>${rootpath}/_inc/images/section.png</path>
+			<color>${systemTextMetaColor}</color>
+		</image>
+		<text name="InThisCollection">
+			<pos>0.335 0.4</pos>
+			<size>0.4 0.18</size>
+			<text>In this collection...</text>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${systemTextMetaColor}</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${fontLight}</fontPath>
+			<container>true</container>
+		</text>
+		<gameselector name="gamesRandom">
+			<selection>random</selection>
+			<gameCount>4</gameCount>
+		</gameselector>
+		<image name="game1Image">
+			<tile>false</tile>
+			<pos>0.32 0.44</pos>
+			<cropSize>.15 .22</cropSize>
+			<origin>0 0</origin>
+			<imageType>screenshot</imageType>
+			<cornerRadius>.01</cornerRadius>
+			<interpolation>linear</interpolation>
+			<gameselector>gamesRandom</gameselector>
+			<gameselectorEntry>0</gameselectorEntry>
+			<zIndex>48</zIndex>
+		</image>
+		<text name="game1Title">
+			<pos>0.32 0.665</pos>
+			<size>0.15 0.18</size>
+			<metadata>name</metadata>
+			<gameselector>gamesRandom</gameselector>
+			<gameselectorEntry>0</gameselectorEntry>
+			<fontSize>0.018</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${systemTextMetaColor}</color>
+			<verticalAlignment>top</verticalAlignment>
+			<horizontalAlignment>center</horizontalAlignment>
+			<fontPath>${fontLight}</fontPath>
+			<container>true</container>
+		</text>		
+		<image name="game2Image">
+			<tile>false</tile>
+			<gameselector>gamesRandom</gameselector>
+			<pos>0.48 0.44</pos>
+			<cropSize>.15 .22</cropSize>
+			<origin>0 0</origin>
+			<imageType>screenshot</imageType>
+			<cornerRadius>.01</cornerRadius>
+			<interpolation>linear</interpolation>
+			<gameselectorEntry>1</gameselectorEntry>
+			<zIndex>48</zIndex>
+		</image>
+		<text name="game2Title">
+			<pos>0.48 0.665</pos>
+			<size>0.15 0.18</size>
+			<metadata>name</metadata>
+			<gameselector>gamesRandom</gameselector>
+			<gameselectorEntry>1</gameselectorEntry>
+			<fontSize>0.018</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${systemTextMetaColor}</color>
+			<verticalAlignment>top</verticalAlignment>
+			<horizontalAlignment>center</horizontalAlignment>
+			<fontPath>${fontLight}</fontPath>
+			<container>true</container>
+		</text>
+		<image name="game3Image">
+			<tile>false</tile>
+			<gameselector>gamesRandom</gameselector>
+			<pos>0.64 0.44</pos>
+			<cropSize>.15 .22</cropSize>
+			<origin>0 0</origin>
+			<imageType>screenshot</imageType>
+			<cornerRadius>.01</cornerRadius>
+			<interpolation>linear</interpolation>
+			<gameselectorEntry>2</gameselectorEntry>
+			<zIndex>48</zIndex>
+		</image>
+		<text name="game3Title">
+			<pos>0.64 0.665</pos>
+			<size>0.15 0.18</size>
+			<metadata>name</metadata>
+			<gameselector>gamesRandom</gameselector>
+			<gameselectorEntry>2</gameselectorEntry>
+			<fontSize>0.018</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${systemTextMetaColor}</color>
+			<verticalAlignment>top</verticalAlignment>
+			<horizontalAlignment>center</horizontalAlignment>
+			<fontPath>${fontLight}</fontPath>
+			<container>true</container>
+		</text>
+		<image name="game4Image">
+			<tile>false</tile>
+			<gameselector>gamesRandom</gameselector>
+			<pos>0.8 0.44</pos>
+			<cropSize>.15 .22</cropSize>
+			<origin>0 0</origin>
+			<imageType>screenshot</imageType>
+			<cornerRadius>.01</cornerRadius>
+			<interpolation>linear</interpolation>
+			<gameselectorEntry>3</gameselectorEntry>
+			<zIndex>48</zIndex>
+		</image>
+		<text name="game4Title">
+			<pos>0.8 0.665</pos>
+			<size>0.15 0.18</size>
+			<metadata>name</metadata>
+			<gameselector>gamesRandom</gameselector>
+			<gameselectorEntry>3</gameselectorEntry>
+			<fontSize>0.018</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${systemTextMetaColor}</color>
+			<verticalAlignment>top</verticalAlignment>
+			<horizontalAlignment>center</horizontalAlignment>
+			<fontPath>${fontLight}</fontPath>
+			<container>true</container>
+		</text>
+		
+		<!-- RECENTLY PLAYED -->
+		<image name="RecentlyPlayedIcon">
+			<pos>.32 .713</pos>
+			<maxSize>.02 .02</maxSize>
+			<path>${rootpath}/_inc/images/section.png</path>
+			<color>${systemTextMetaColor}</color>
+		</image>
+		<text name="RecentlyPlayed">
+			<pos>0.335 0.71</pos>
+			<size>0.4 0.18</size>
+			<text>Recently played...</text>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${systemTextMetaColor}</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${fontLight}</fontPath>
+			<container>true</container>
+		</text>
+		<gameselector name="gamesRecent">
+			<selection>lastplayed</selection>
+			<gameCount>4</gameCount>
+		</gameselector>
+		<image name="recent1Screenshot">
+			<tile>false</tile>
+			<pos>0.32 0.75</pos>
+			<cropSize>.2033333333333333 .2</cropSize>
+			<opacity>.5</opacity>
+			<origin>0 0</origin>
+			<imageType>fanart, screenshot</imageType>
+			<cornerRadius>.01</cornerRadius>
+			<interpolation>linear</interpolation>
+			<gameselector>gamesRecent</gameselector>
+			<gameselectorEntry>0</gameselectorEntry>
+			<zIndex>48</zIndex>
+		</image>
+		<image name="recent1Marquee">
+			<tile>false</tile>
+			<pos>0.42 0.855</pos>
+			<maxSize>.17 .17</maxSize>
+			<origin>.5 .5</origin>
+			<imageType>marquee</imageType>
+			<interpolation>linear</interpolation>
+			<gameselector>gamesRecent</gameselector>
+			<gameselectorEntry>0</gameselectorEntry>
+			<zIndex>50</zIndex>
+		</image>		
+		<image name="recent2Screenshot">
+			<tile>false</tile>
+			<pos>0.532 0.75</pos>
+			<cropSize>.2033333333333333 .2</cropSize>
+			<opacity>.5</opacity>
+			<origin>0 0</origin>
+			<imageType>fanart, screenshot</imageType>
+			<cornerRadius>.01</cornerRadius>
+			<interpolation>linear</interpolation>
+			<gameselector>gamesRecent</gameselector>
+			<gameselectorEntry>1</gameselectorEntry>
+			<zIndex>48</zIndex>
+		</image>
+		<image name="recent2Marquee">
+			<tile>false</tile>
+			<pos>0.635 0.855</pos>
+			<maxSize>.17 .17</maxSize>
+			<origin>.5 .5</origin>
+			<imageType>marquee</imageType>
+			<interpolation>linear</interpolation>
+			<gameselector>gamesRecent</gameselector>
+			<gameselectorEntry>1</gameselectorEntry>
+			<zIndex>50</zIndex>
+		</image>
+		<image name="recent3Screenshot">
+			<tile>false</tile>
+			<pos>0.7433333333333333 0.75</pos>
+			<cropSize>.2033333333333333 .2</cropSize>
+			<opacity>.5</opacity>
+			<origin>0 0</origin>
+			<imageType>fanart, screenshot</imageType>
+			<cornerRadius>.01</cornerRadius>
+			<interpolation>linear</interpolation>
+			<gameselector>gamesRecent</gameselector>
+			<gameselectorEntry>2</gameselectorEntry>
+			<zIndex>48</zIndex>
+		</image>
+		<image name="recent3Marquee">
+			<tile>false</tile>
+			<pos>0.845 0.855</pos>
+			<maxSize>.17 .17</maxSize>
+			<origin>.5 .5</origin>
+			<imageType>marquee</imageType>
+			<interpolation>linear</interpolation>
+			<gameselector>gamesRecent</gameselector>
+			<gameselectorEntry>2</gameselectorEntry>
+			<zIndex>50</zIndex>
+		</image>
+		
+	</view>
+</theme>

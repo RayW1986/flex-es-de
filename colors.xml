@@ -1,0 +1,123 @@
+<theme>
+	<colorScheme name="default">
+		<variables>
+			<backgroundColor>23272A</backgroundColor>
+			<selectorBackgroundColor>23272A</selectorBackgroundColor>
+			<selectorColor>E6A00D</selectorColor>
+			<selectorColorEnd>E6A00D</selectorColorEnd>
+			<selectorTextColor>000000</selectorTextColor>
+			<mainTextColor>FFFFFF</mainTextColor>
+			<systemTextMetaColor>C0C0C0</systemTextMetaColor>
+			<systemDescriptionBackground>32393F</systemDescriptionBackground>
+		</variables>
+	</colorScheme>
+	<colorScheme name="hotPink">
+		<variables>
+			<backgroundColor>23272A</backgroundColor>
+			<selectorBackgroundColor>23272A</selectorBackgroundColor>
+			<selectorColor>E0266A</selectorColor>
+			<selectorColorEnd>E0266A</selectorColorEnd>
+			<selectorTextColor>FFFFFF</selectorTextColor>
+			<mainTextColor>FFFFFF</mainTextColor>
+			<systemTextMetaColor>C0C0C0</systemTextMetaColor>
+			<systemDescriptionBackground>32393F</systemDescriptionBackground>
+		</variables>
+	</colorScheme>
+	<colorScheme name="aqua">
+		<variables>
+			<backgroundColor>23272A</backgroundColor>
+			<selectorBackgroundColor>23272A</selectorBackgroundColor>
+			<selectorColor>0078BB</selectorColor>
+			<selectorColorEnd>00bea7</selectorColorEnd>
+			<selectorTextColor>FFFFFF</selectorTextColor>
+			<mainTextColor>FFFFFF</mainTextColor>
+			<systemTextMetaColor>C0C0C0</systemTextMetaColor>
+			<systemDescriptionBackground>32393F</systemDescriptionBackground>
+		</variables>
+	</colorScheme>
+	<colorScheme name="blue">
+		<variables>
+			<backgroundColor>23272A</backgroundColor>
+			<selectorBackgroundColor>23272A</selectorBackgroundColor>
+			<selectorColor>0078BB</selectorColor>
+			<selectorColorEnd>0078BB</selectorColorEnd>
+			<selectorTextColor>FFFFFF</selectorTextColor>
+			<mainTextColor>FFFFFF</mainTextColor>
+			<systemTextMetaColor>C0C0C0</systemTextMetaColor>
+			<systemDescriptionBackground>32393F</systemDescriptionBackground>
+		</variables>
+	</colorScheme>
+	<colorScheme name="tropicalSunset">
+		<variables>
+			<backgroundColor>23272A</backgroundColor>
+			<selectorBackgroundColor>23272A</selectorBackgroundColor>
+			<selectorColor>F45020</selectorColor>
+			<selectorColorEnd>E91F62</selectorColorEnd>
+			<selectorTextColor>FFFFFF</selectorTextColor>
+			<mainTextColor>FFFFFF</mainTextColor>
+			<systemTextMetaColor>C0C0C0</systemTextMetaColor>
+			<systemDescriptionBackground>32393F</systemDescriptionBackground>
+		</variables>
+	</colorScheme>
+	<colorScheme name="miamiVapourwave">
+		<variables>
+			<backgroundColor>23272A</backgroundColor>
+			<selectorBackgroundColor>23272A</selectorBackgroundColor>
+			<selectorColor>E81E66</selectorColor>
+			<selectorColorEnd>B834E0</selectorColorEnd>
+			<selectorTextColor>FFFFFF</selectorTextColor>
+			<mainTextColor>FFFFFF</mainTextColor>
+			<systemTextMetaColor>C0C0C0</systemTextMetaColor>
+			<systemDescriptionBackground>32393F</systemDescriptionBackground>
+		</variables>
+	</colorScheme>
+	<colorScheme name="monochrome">
+		<variables>
+			<backgroundColor>23272A</backgroundColor>
+			<selectorBackgroundColor>23272A</selectorBackgroundColor>
+			<selectorColor>FFFFFF</selectorColor>
+			<selectorColorEnd>FFFFFF</selectorColorEnd>
+			<selectorTextColor>000000</selectorTextColor>
+			<mainTextColor>FFFFFF</mainTextColor>
+			<systemTextMetaColor>C0C0C0</systemTextMetaColor>
+			<systemDescriptionBackground>32393F</systemDescriptionBackground>
+		</variables>
+	</colorScheme>
+	<colorScheme name="red">
+		<variables>
+			<backgroundColor>23272A</backgroundColor>
+			<selectorBackgroundColor>23272A</selectorBackgroundColor>
+			<selectorColor>C70805</selectorColor>
+			<selectorColorEnd>C70805</selectorColorEnd>
+			<selectorTextColor>FFFFFF</selectorTextColor>
+			<mainTextColor>FFFFFF</mainTextColor>
+			<systemTextMetaColor>C0C0C0</systemTextMetaColor>
+			<systemDescriptionBackground>32393F</systemDescriptionBackground>
+		</variables>
+	</colorScheme>
+	<colorScheme name="purple">
+		<variables>
+			<backgroundColor>23272A</backgroundColor>
+			<selectorBackgroundColor>23272A</selectorBackgroundColor>
+			<selectorColor>790375</selectorColor>
+			<selectorColorEnd>790375</selectorColorEnd>
+			<selectorTextColor>FFFFFF</selectorTextColor>
+			<mainTextColor>FFFFFF</mainTextColor>
+			<systemTextMetaColor>C0C0C0</systemTextMetaColor>
+			<systemDescriptionBackground>32393F</systemDescriptionBackground>
+		</variables>
+	</colorScheme>
+	<colorScheme name="greenGrass">
+		<variables>
+			<backgroundColor>23272A</backgroundColor>
+			<selectorBackgroundColor>23272A</selectorBackgroundColor>
+			<selectorColor>31E395</selectorColor>
+			<selectorColorEnd>2CA77B</selectorColorEnd>
+			<selectorTextColor>FFFFFF</selectorTextColor>
+			<mainTextColor>FFFFFF</mainTextColor>
+			<systemTextMetaColor>C0C0C0</systemTextMetaColor>
+			<systemDescriptionBackground>32393F</systemDescriptionBackground>
+		</variables>
+	</colorScheme>
+	
+</theme>

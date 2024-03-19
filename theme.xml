@@ -1,0 +1,27 @@
+<theme>
+	
+	<variant name="Default">
+		<include>./_default_systems.xml</include>
+		<include>./_default_gamelist.xml</include>
+		<include>./_default_help.xml</include>
+	</variant>
+	
+	<variant name="MediaView">
+		<include>./_default_systems.xml</include>
+		<include>./_media-view_gamelist.xml</include>
+		<include>./_default_help.xml</include>
+	</variant>
+	
+	<variant name="CoverRow">
+		<include>./_default_systems.xml</include>
+		<include>./_cover-row_gamelist.xml</include>
+		<include>./_center_help.xml</include>
+	</variant>
+	
+	<variant name="TextRow">
+		<include>./_default_systems.xml</include>
+		<include>./_text-row_gamelist.xml</include>
+		<include>./_center_help.xml</include>
+	</variant>
+	
+</theme>

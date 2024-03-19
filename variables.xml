@@ -1,0 +1,11 @@
+<!--
+	Artflix Revisited (artflix-revisited-es-de) Theme
+	License: Creative Commons CC-BY-NC-SA
+-->
+
+<theme>
+	<variables>
+		<rootpath>./</rootpath>
+		<treepath>./../</treepath>
+	</variables>
+</theme>

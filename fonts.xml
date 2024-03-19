@@ -1,0 +1,12 @@
+<theme>
+	<include>./variables.xml</include>
+	<variables>
+		<fontBlack>${rootpath}/_inc/fonts/Roboto-Black.ttf</fontBlack>
+		<fontBold>${rootpath}/_inc/fonts/Roboto-Bold.ttf</fontBold>
+		<fontItalic>${rootpath}/_inc/fonts/Roboto-Italic.ttf</fontItalic>
+		<fontLight>${rootpath}/_inc/fonts/Roboto-Light.ttf</fontLight>
+		<fontMedium>${rootpath}/_inc/fonts/Roboto-Medium.ttf</fontMedium>
+		<fontRegular>${rootpath}/_inc/fonts/Roboto-Regular.ttf</fontRegular>
+		<fontThin>${rootpath}/_inc/fonts/Roboto-Thin.ttf</fontThin>
+	</variables>
+</theme>

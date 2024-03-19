@@ -1,0 +1,79 @@
+<!--
+	Theme capabilities for flex-es-de
+-->
+
+<themeCapabilities>
+	<themeName>Flex</themeName>
+
+	<!--<aspectRatio>16:9</aspectRatio>
+	<aspectRatio>16:10</aspectRatio>
+	<aspectRatio>19.5:9</aspectRatio>
+	<aspectRatio>4:3</aspectRatio>-->
+	
+	<colorScheme name="default"><label>Default</label></colorScheme>
+	<colorScheme name="aqua"><label>Aqua Classic</label></colorScheme>
+	<colorScheme name="blue"><label>Blue</label></colorScheme>
+	<colorScheme name="greenGrass"><label>Green Grass</label></colorScheme>
+	<colorScheme name="hotPink"><label>Hot Pink</label></colorScheme>
+	<colorScheme name="miamiVapourwave"><label>Miami Vapourwave</label></colorScheme>
+	<colorScheme name="monochrome"><label>Monochrome</label></colorScheme>
+	<colorScheme name="purple"><label>Purple</label></colorScheme>
+	<colorScheme name="red"><label>Red</label></colorScheme>
+	<colorScheme name="tropicalSunset"><label>Tropical Sunset</label></colorScheme>
+	
+	<transitions name="instant">
+		<label>Instant</label>
+		<selectable>true</selectable>
+		<systemToSystem>instant</systemToSystem>
+		<systemToGamelist>instant</systemToGamelist>
+		<gamelistToGamelist>instant</gamelistToGamelist>
+		<gamelistToSystem>instant</gamelistToSystem>
+		<startupToSystem>instant</startupToSystem>
+	</transitions>
+	<transitions name="slide">
+		<label>Slide</label>
+		<selectable>true</selectable>
+		<systemToSystem>instant</systemToSystem>
+		<systemToGamelist>slide</systemToGamelist>
+		<gamelistToGamelist>slide</gamelistToGamelist>
+		<gamelistToSystem>slide</gamelistToSystem>
+		<startupToSystem>slide</startupToSystem>
+	</transitions>
+	<transitions name="fade">
+		<label>Fade</label>
+		<selectable>true</selectable>
+		<systemToSystem>instant</systemToSystem>
+		<systemToGamelist>fade</systemToGamelist>
+		<gamelistToGamelist>fade</gamelistToGamelist>
+		<gamelistToSystem>fade</gamelistToSystem>
+		<startupToSystem>fade</startupToSystem>
+	</transitions>
+	
+	<suppressTransitionProfiles>
+		<entry>builtin-instant</entry>
+		<entry>builtin-slide</entry>
+		<entry>builtin-fade</entry>
+	</suppressTransitionProfiles>
+	
+	<variant name="Default">
+		<label>Default</label>
+		<selectable>true</selectable>
+		<transitions>instant</transitions>
+	</variant>
+	<variant name="CoverRow">
+		<label>Cover Carousel</label>
+		<selectable>true</selectable>
+		<transitions>instant</transitions>
+	</variant>
+	<variant name="MediaView">
+		<label>Media View</label>
+		<selectable>true</selectable>
+		<transitions>instant</transitions>
+	</variant>
+	<variant name="TextRow">
+		<label>Text Carousel</label>
+		<selectable>true</selectable>
+		<transitions>instant</transitions>
+	</variant>
+	
+</themeCapabilities>

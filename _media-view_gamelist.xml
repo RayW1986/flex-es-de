@@ -1,0 +1,299 @@
+<theme> 
+	
+	<include>./variables.xml</include>
+	<include>./colors.xml</include>
+	<include>./fonts.xml</include>
+	<include>./navigationsounds.xml</include>
+	<include>${rootpath}/_inc/systems/metadata-global/_default.xml</include>
+	<include>${rootpath}/_inc/systems/metadata-global/${system.theme}.xml</include>
+	
+	<view name="gamelist">
+		<image name="imageBackground">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>${rootpath}/_inc/images/background.png</path>
+			<color>${backgroundColor}</color>
+			<zIndex>1</zIndex>
+		</image>
+		
+		<!-- GAME LIST -->
+		<textlist name="systemList">
+			<pos>.02 .05</pos>
+			<size>.26 .9</size>
+			<fontPath>${fontLight}</fontPath>
+			<fontSize>.028</fontSize>
+			<horizontalAlignment>right</horizontalAlignment>
+			<selectorImagePath>${rootpath}/_inc/images/textlist_select.png</selectorImagePath>
+			<selectorWidth>.28</selectorWidth>
+			<selectorHorizontalOffset>-.02</selectorHorizontalOffset>
+			<selectorColor>${selectorColor}</selectorColor>
+			<selectedColor>${selectorTextColor}</selectedColor>
+			<primaryColor>FFFFFF</primaryColor>
+			<secondaryColor>FFFFFF</secondaryColor>
+			<horizontalMargin>0.008333333333333</horizontalMargin>
+			<systemNameSuffix>false</systemNameSuffix>
+			<letterCaseAutoCollections>capitalize</letterCaseAutoCollections>
+			<zIndex>20</zIndex>
+		</textlist>
+		<image name="listBackground">
+			<pos>0 0</pos>
+			<size>.28 1</size>
+			<path>${rootpath}/_inc/images/background.png</path>
+			<color>${selectorBackgroundColor}</color>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="listShadow">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>${rootpath}/_inc/images/selector_shadow.png</path>
+			<zIndex>1</zIndex>
+		</image>
+		
+		<!-- BOXART -->
+		<image name="boxart">
+			<origin>.5 .5</origin>
+			<pos>.4075 .225</pos>
+			<maxSize>.175 .35</maxSize>
+			<imageType>3dbox, cover</imageType>
+		</image>
+		
+		<!-- GAME DETAILS -->
+		<rating name="metaRating">
+			<pos>0.5 0.035</pos>
+			<origin>0 0</origin>
+			<size>0 0.022</size>
+			<filledPath>${rootpath}/_inc/images/star_filled.svg</filledPath>
+			<unfilledPath>${rootpath}/_inc/images/star_unfilled.svg</unfilledPath>
+			<color>${selectorColor}</color>
+			<zIndex>65</zIndex>
+		</rating>
+		<text name="gameName">
+			<pos>0.5 0.06</pos>
+			<size>0.46 0.038</size>
+			<metadata>name</metadata>
+			<fontSize>0.035</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${mainTextColor}</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${fontRegular}</fontPath>
+			<container>false</container>
+		</text>
+		<datetime name="gameYear">
+			<metadata>releasedate</metadata>
+			<pos>0.5 0.11</pos>
+			<size>0.4 0.18</size>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<verticalAlignment>top</verticalAlignment>
+			<horizontalAlignment>left</horizontalAlignment>
+			<color>${systemTextMetaColor}</color>
+			<fontPath>${fontLight}</fontPath>
+			<defaultValue>-</defaultValue>
+			<format>%Y</format>
+		</datetime>
+		<text name="metaSep">
+			<pos>0.5385 0.11</pos>
+			<size>0.4 0.18</size>
+			<text>•</text>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${systemTextMetaColor}</color>
+			<fontPath>${fontLight}</fontPath>
+			<verticalAlignment>top</verticalAlignment>
+			<container>true</container>
+		</text>
+		<text name="gameGenre">
+			<pos>0.55 0.11</pos>
+			<size>0.35 0.18</size>
+			<metadata>genre</metadata>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${systemTextMetaColor}</color>
+			<fontPath>${fontLight}</fontPath>
+			<verticalAlignment>top</verticalAlignment>
+			<container>true</container>
+		</text>
+		
+		<!-- GAME DESCRIPTION -->
+		<text name="gameDescription">
+			<pos>.5 .15</pos>
+			<size>.46 .12</size>
+			<metadata>description</metadata>
+			<fontSize>0.023</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${mainTextColor}</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${fontRegular}</fontPath>
+			<container>true</container>
+		</text>
+		
+		<!-- GAME METADATA -->
+		<text name="meta1Title">
+			<pos>0.5 0.27</pos>
+			<size>0.19 0.025</size>
+			<text>Developer</text>
+			<fontSize>0.021</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${systemTextMetaColor}</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${fontLight}</fontPath>
+			<container>false</container>
+		</text>
+		<text name="meta1Info">
+			<pos>0.58 0.27</pos>
+			<size>0.37 0.025</size>
+			<metadata>developer</metadata>
+			<fontSize>0.021</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${systemTextMetaColor}</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${fontLight}</fontPath>
+			<container>false</container>
+		</text>
+		<text name="meta2Title">
+			<pos>0.5 0.3</pos>
+			<size>0.19 0.025</size>
+			<text>No. Players</text>
+			<fontSize>0.021</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${systemTextMetaColor}</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${fontLight}</fontPath>
+			<container>false</container>
+		</text>
+		<text name="meta2Info">
+			<pos>0.58 0.3</pos>
+			<size>0.37 0.025</size>
+			<metadata>players</metadata>
+			<fontSize>0.021</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${systemTextMetaColor}</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${fontLight}</fontPath>
+			<container>false</container>
+		</text>
+		<text name="meta3Title">
+			<pos>0.5 0.33</pos>
+			<size>0.19 0.025</size>
+			<text>Emulator</text>
+			<fontSize>0.021</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${systemTextMetaColor}</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${fontLight}</fontPath>
+			<container>false</container>
+		</text>
+		<text name="meta3Info">
+			<pos>0.58 0.33</pos>
+			<size>0.37 0.025</size>
+			<metadata>emulator</metadata>
+			<fontSize>0.021</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${systemTextMetaColor}</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${fontLight}</fontPath>
+			<container>false</container>
+		</text>
+		<text name="meta4Title">
+			<pos>0.5 0.36</pos>
+			<size>0.19 0.025</size>
+			<text>Filename</text>
+			<fontSize>0.021</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${systemTextMetaColor}</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${fontLight}</fontPath>
+			<container>false</container>
+		</text>
+		<text name="meta4Info">
+			<pos>0.58 0.36</pos>
+			<size>0.37 0.025</size>
+			<metadata>physicalNameExtension</metadata>
+			<fontSize>0.021</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${systemTextMetaColor}</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${fontLight}</fontPath>
+			<container>false</container>
+		</text>
+		
+		<!-- BADGES -->
+		<badges name="gameBadges">
+			<pos>0.5 0.395</pos>
+			<size>.5 .035</size>
+			<origin>0 0</origin>
+			<horizontalAlignment>left</horizontalAlignment>
+			<direction>row</direction>
+			<lines>1</lines>
+			<itemsPerLine>9</itemsPerLine>
+			<itemMargin>-1 .01</itemMargin>
+			<slots>collection, folder, favorite, completed, kidgame, broken, controller, altemulator, manual</slots>
+			<customBadgeIcon badge="collection">${rootpath}/_inc/images/icons/badge-collection.png</customBadgeIcon>
+			<customBadgeIcon badge="folder">${rootpath}/_inc/images/icons/badge-folder.png</customBadgeIcon>
+			<customBadgeIcon badge="favorite">${rootpath}/_inc/images/icons/badge-favorite.png</customBadgeIcon>
+			<customBadgeIcon badge="completed">${rootpath}/_inc/images/icons/badge-completed.png</customBadgeIcon>
+			<customBadgeIcon badge="kidgame">${rootpath}/_inc/images/icons/badge-kidgame.png</customBadgeIcon>
+			<customBadgeIcon badge="broken">${rootpath}/_inc/images/icons/badge-broken.png</customBadgeIcon>
+			<customBadgeIcon badge="controller">${rootpath}/_inc/images/icons/badge-controller.png</customBadgeIcon>
+			<customBadgeIcon badge="altemulator">${rootpath}/_inc/images/icons/badge-altemulator.png</customBadgeIcon>
+			<customBadgeIcon badge="manual">${rootpath}/_inc/images/icons/badge-manual.png</customBadgeIcon>
+			<controllerIconColor>FFFFFF</controllerIconColor>
+			<controllerSize>1</controllerSize>
+			<zIndex>65</zIndex>
+		</badges>
+		
+		<!-- GAME ARTWORK -->
+		<video name="video">
+			<pos>0.32 0.46</pos>
+			<cropSize>.2033333333333333 .27</cropSize>
+			<origin>0 0</origin>
+			<imageType>fanart, miximage</imageType>
+			<interpolation>linear</interpolation>
+			<gameselectorEntry>0</gameselectorEntry>
+			<scanlines>true</scanlines>
+			<delay>0</delay>
+			<zIndex>48</zIndex>
+		</video>
+		<image name="screenshot">
+			<tile>false</tile>
+			<pos>0.532 0.46</pos>
+			<cropSize>.2033333333333333 .27</cropSize>
+			<origin>0 0</origin>
+			<imageType>titlescreen</imageType>
+			<interpolation>linear</interpolation>
+		</image>
+		<image name="titlescreen">
+			<tile>false</tile>
+			<pos>0.7433333333333333 0.46</pos>
+			<cropSize>.2033333333333333 .27</cropSize>
+			<origin>0 0</origin>
+			<imageType>screenshot</imageType>
+			<interpolation>linear</interpolation>
+		</image>
+		<image name="marquee">
+			<tile>false</tile>
+			<pos>0.422 0.825</pos>
+			<maxSize>.2033333333333333 .17</maxSize>
+			<origin>.5 .5</origin>
+			<imageType>marquee</imageType>
+			<interpolation>linear</interpolation>
+		</image>
+		<image name="physicalmedia">
+			<tile>false</tile>
+			<pos>0.634 0.825</pos>
+			<maxSize>.2033333333333333 .17</maxSize>
+			<origin>.5 .5</origin>
+			<imageType>physicalmedia</imageType>
+			<interpolation>linear</interpolation>
+		</image>
+		<image name="fanart">
+			<tile>false</tile>
+			<pos>0.7433333333333333 0.75</pos>
+			<cropSize>.2033333333333333 .17</cropSize>
+			<origin>0 0</origin>
+			<imageType>fanart</imageType>
+			<interpolation>linear</interpolation>
+		</image>
+		
+	</view>
+</theme> 
